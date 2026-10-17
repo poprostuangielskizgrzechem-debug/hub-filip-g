@@ -7510,14 +7510,16 @@ video {
         }
         function exLev(a, b) {
             if (Math.abs(a.length - b.length) > 1) return 2;
-            var prev = [], cur, i, j;
+            // Damerau: zamiana dwoch sasiednich liter (littel) to tez jedna literowka.
+            var pp = [], prev = [], cur, i, j;
             for (j = 0; j <= b.length; j++) prev[j] = j;
             for (i = 1; i <= a.length; i++) {
                 cur = [i];
                 for (j = 1; j <= b.length; j++) {
                     cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+                    if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) cur[j] = Math.min(cur[j], pp[j - 2] + 1);
                 }
-                prev = cur;
+                pp = prev; prev = cur;
             }
             return prev[b.length];
         }
