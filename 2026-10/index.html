@@ -2224,6 +2224,7 @@ video {
             <button type="button" class="hub-nav-btn" data-hub-nav="pronunciation">&#128266; Wymowa</button>
             <button type="button" class="hub-nav-btn" data-hub-nav="writing">&#128214; Teksty</button>
             <button type="button" class="hub-nav-btn" data-hub-nav="exercises">&#128203; &Cacute;wiczenia</button>
+            <button type="button" class="hub-nav-btn" data-hub-nav="games">&#127918; Gry</button>
             <button type="button" class="hub-nav-btn" data-hub-nav="sentences">&#9997;&#65039; Zdania</button>
         </nav>
         <!-- === HUB MODULE - END (nav) === -->
@@ -2696,6 +2697,33 @@ video {
             </div>
         </section>
         <!-- === HUB MODULE - END (exercises view) === -->
+        <!-- === HUB MODULE - START (games view) === -->
+        <section id="hub-games-view" class="hidden no-print flex-grow flex items-start justify-center relative z-20">
+            <div class="hub-shell">
+                <div class="hub-topbar"></div>
+                <div class="hub-inner">
+
+                    <div class="hub-head">
+                        <h2 class="hub-title">Gry</h2>
+                        <p class="hub-tagline">Gry z angielskim do zagrania na telefonie albo komputerze.</p>
+                    </div>
+
+                    <div id="hub-games-list"></div>
+
+                    <div class="hub-footer">
+                        <button type="button" class="hub-link-btn" data-hub-nav="home">&larr; Powr&oacute;t</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div id="hub-game-overlay" class="no-print" style="position:fixed; inset:0; z-index:9999; background:#fff; display:none; flex-direction:column;">
+            <div style="display:flex; justify-content:flex-end; padding:6px 10px; border-bottom:1px solid #ddd; background:#f7f7f7;">
+                <button type="button" class="hub-link-btn" id="hub-game-close">&#10005; Zamknij gr&#281;</button>
+            </div>
+            <iframe id="hub-game-frame" title="Gra" style="flex:1; width:100%; border:0;"></iframe>
+        </div>
+        <!-- === HUB MODULE - END (games view) === -->
         <!-- === HUB MODULE - START (sentences view) === -->
         <section id="hub-sentences-view" class="hidden no-print flex-grow flex items-start justify-center relative z-20">
             <div class="hub-shell">
@@ -3310,6 +3338,56 @@ video {
                                     "sentenceWithGap": "Surfers wear a [gap] to protect their skin from the sun.",
                                     "firstLetterHint": "r"
                         }
+            ],
+            "Lekcja 4 (23.10)": [
+                        {
+                                    "word": "naughty",
+                                    "translation": "niegrzeczny",
+                                    "definition": "behaving badly, not doing what you are told",
+                                    "pos": "adj",
+                                    "sentenceWithGap": "The [gap] puppy chewed my new shoes and hid under the bed.",
+                                    "firstLetterHint": "n"
+                        },
+                        {
+                                    "word": "lettuce",
+                                    "translation": "sałata",
+                                    "definition": "a green vegetable with big leaves, used in salads",
+                                    "pos": "n",
+                                    "sentenceWithGap": "Our rabbit loves eating green [gap] leaves from the garden.",
+                                    "firstLetterHint": "l"
+                        },
+                        {
+                                    "word": "participant",
+                                    "translation": "uczestnik",
+                                    "definition": "a person who takes part in something",
+                                    "pos": "n",
+                                    "sentenceWithGap": "Every [gap] in the race gets a medal and a T-shirt.",
+                                    "firstLetterHint": "p"
+                        },
+                        {
+                                    "word": "include",
+                                    "translation": "obejmować, zawierać",
+                                    "definition": "to have something as one part of the whole",
+                                    "pos": "v",
+                                    "sentenceWithGap": "Does the price [gap] breakfast, or do we have to pay extra?",
+                                    "firstLetterHint": "i"
+                        },
+                        {
+                                    "word": "weather forecast",
+                                    "translation": "prognoza pogody",
+                                    "definition": "information about what the weather will be like",
+                                    "pos": "phr",
+                                    "sentenceWithGap": "According to the [gap], it will rain all weekend.",
+                                    "firstLetterHint": "w"
+                        },
+                        {
+                                    "word": "luggage",
+                                    "translation": "bagaż",
+                                    "definition": "the bags and suitcases you take when you travel",
+                                    "pos": "n",
+                                    "sentenceWithGap": "We had so much [gap] that it didn't fit in the car boot.",
+                                    "firstLetterHint": "l"
+                        }
             ]
 };
 
@@ -3322,8 +3400,8 @@ video {
         "teacherWhatsApp": "48518201312",
         "storageKey": "hub_filip-g_2026-10",
         "studentKey": "hub_filip-g",
-        "stamp": "aktualizacja po lekcji 3, 17.10.2026",
-        "lastLessonPhrase": "lekcji 3",
+        "stamp": "aktualizacja po lekcji 4, 17.10.2026",
+        "lastLessonPhrase": "lekcji 4",
         "lessons": [
                 {
                         "label": "Lekcja 1",
@@ -3348,6 +3426,14 @@ video {
                         "vocabCount": 12,
                         "extraVocabCount": 0,
                         "topic": "Zadania z zakładki „Ćwiczenia” (Lekcja 2), zrobione na podstawie Repetytorium Ósmoklasisty cz. 2, zeszyt ćwiczeń, Review Units 1-8, str. 5"
+                },
+                {
+                        "label": "Lekcja 4",
+                        "dateLabel": "23.10.2026",
+                        "categoryKey": "Lekcja 4 (23.10)",
+                        "vocabCount": 6,
+                        "extraVocabCount": 0,
+                        "topic": "Sprawdzenie zadania domowego: Interaktywny Arkusz E801 (słuchanie), testy Po Prostu Angielski z Grzechem, ćwiczenia w Hubie oraz Repetytorium Ósmoklasisty cz. 2, zeszyt ćwiczeń, Review Units 1-8, str. 6-7, zad. 5"
                 }
         ],
         "grammar": [
@@ -3497,6 +3583,30 @@ video {
                         "lessonLabel": "Lekcja 2",
                         "word": "radio",
                         "translation": "radio",
+                        "note": ""
+                },
+                {
+                        "lessonLabel": "Lekcja 4",
+                        "word": "naughty",
+                        "translation": "niegrzeczny",
+                        "note": ""
+                },
+                {
+                        "lessonLabel": "Lekcja 4",
+                        "word": "lettuce",
+                        "translation": "sałata",
+                        "note": ""
+                },
+                {
+                        "lessonLabel": "Lekcja 4",
+                        "word": "participant",
+                        "translation": "uczestnik",
+                        "note": ""
+                },
+                {
+                        "lessonLabel": "Lekcja 4",
+                        "word": "luggage",
+                        "translation": "bagaż",
                         "note": ""
                 }
         ],
@@ -4734,6 +4844,7 @@ video {
                         ]
                 }
         ],
+        "games": [],
         "distractors": [
                 {
                         "word": "scarf",
@@ -5218,6 +5329,42 @@ video {
                         "lessons": [
                                 "Lekcja 3"
                         ]
+                },
+                {
+                        "word": "naughty",
+                        "lessons": [
+                                "Lekcja 4"
+                        ]
+                },
+                {
+                        "word": "lettuce",
+                        "lessons": [
+                                "Lekcja 4"
+                        ]
+                },
+                {
+                        "word": "participant",
+                        "lessons": [
+                                "Lekcja 4"
+                        ]
+                },
+                {
+                        "word": "include",
+                        "lessons": [
+                                "Lekcja 4"
+                        ]
+                },
+                {
+                        "word": "weather forecast",
+                        "lessons": [
+                                "Lekcja 4"
+                        ]
+                },
+                {
+                        "word": "luggage",
+                        "lessons": [
+                                "Lekcja 4"
+                        ]
                 }
         ],
         "sentenceCount": 5,
@@ -5236,6 +5383,11 @@ video {
                         "lessonLabel": "Lekcja 3",
                         "dateLabel": "16.10.2026",
                         "text": "Zrób najpierw Zadanie 5 w zakładce „Ćwiczenia” w Lekcji 2. Potem przeczytaj informacje o quantifiersach w zakładce „Gramatyka” w Lekcji 3 i zrób zadania z zakładki „Ćwiczenia” w Lekcji 3. Ćwicz słówka z naszych lekcji i notatek, a także z podręczników, z unitów, które teraz przerabiasz w szkole albo ze mną."
+                },
+                {
+                        "lessonLabel": "Lekcja 4",
+                        "dateLabel": "23.10.2026",
+                        "text": "Zrób Interaktywny Arkusz E801, część z czytaniem. Ćwicz słówka z English Class i z naszych notatek, korzystając z fiszek i testów."
                 }
         ]
 };
@@ -6674,6 +6826,7 @@ video {
         var PRONUNCIATION = HUB.pronunciation || [];
         var WRITING = HUB.writingSpeaking || [];
         var EXERCISES = HUB.exercises || [];
+        var GAMES = HUB.games || [];
         // Tryb pliku. "month" to hub miesieczny ucznia (slownictwo z jego lekcji,
         // gramatyka, wymowa, zdania, czasowniki). "unit" to strona jednego dzialu
         // z podrecznika: te same fiszki i ten sam test, tylko karmione slownictwem
@@ -6858,11 +7011,12 @@ video {
             pronunciation: 'hub-pronunciation-view',
             writing:       'hub-writing-view',
             exercises:     'hub-exercises-view',
-            sentences:     'hub-sentences-view'
+            sentences:     'hub-sentences-view',
+            games:         'hub-games-view'
         };
         var ALL_VIEW_IDS = [
             'hub-home-view', 'flashcards-view', 'config-view',
-            'hub-grammar-view', 'hub-media-view', 'hub-pronunciation-view', 'hub-writing-view', 'hub-exercises-view', 'hub-sentences-view', 'hub-verbs-view',
+            'hub-grammar-view', 'hub-media-view', 'hub-pronunciation-view', 'hub-writing-view', 'hub-exercises-view', 'hub-sentences-view', 'hub-verbs-view', 'hub-games-view',
             'path-selection-view', 'student-start-view', 'quiz-view'
         ];
 
@@ -6972,6 +7126,7 @@ video {
                 { key: 'pronunciation', icon: '🔊', label: 'Wymowa',    sub: count(PRONUNCIATION.length, 'słówko', 'słówka', 'słówek') + ' do posłuchania', count: PRONUNCIATION.length },
                 { key: 'writing',       icon: '📖', label: 'Teksty', sub: count(WRITING.length, 'tekst', 'teksty', 'tekstów') + ' do przeczytania/napisania', count: WRITING.length },
                 { key: 'exercises',     icon: '📋', label: 'Ćwiczenia', sub: count(EXERCISES.length, 'ćwiczenie', 'ćwiczenia', 'ćwiczeń') + ' z lukami', count: EXERCISES.length },
+                { key: 'games',         icon: '🎮', label: 'Gry', sub: count(GAMES.length, 'gra', 'gry', 'gier') + ' do zagrania', count: GAMES.length },
                 { key: 'sentences',     icon: '✍️', label: 'Ułóż zdania', sub: count(SENT_COUNT, 'słówko', 'słówka', 'słówek') + ' z puli ' + SENT_POOL.length + ', losowo', count: SENT_POOL.length }
             ];
             // Kafelek czasownikow inaczej wyszedlby na stronie Unitu aktywny, bo
@@ -9919,6 +10074,53 @@ video {
         }
 
         // ==========================================
+        // Gry: osadzony HTML otwierany w pelnoekranowej ramce
+        // ==========================================
+        var gameUrl = null;
+        function renderGames() {
+            var box = el('hub-games-list');
+            if (!box) return;
+            if (!GAMES.length) {
+                box.innerHTML = '<p class="hub-tagline">Na razie nie ma tu gier.</p>';
+            } else {
+                box.innerHTML = '<div class="hub-links">' + GAMES.map(function (g, i) {
+                    return '<button type="button" class="hub-link-tile" data-hub-game="' + i + '" style="cursor:pointer; text-align:left; width:100%">' +
+                        '<span>🎮 <strong>' + escapeHtml(g.title) + '</strong>' +
+                        (g.description ? '<br><span class="hub-tile-sub">' + escapeHtml(g.description) + '</span>' : '') +
+                        '</span></button>';
+                }).join('') + '</div>';
+            }
+            // Przycisk nawigacji znika, gdy nie ma gier - pusta zakladka nic nie daje.
+            var navBtn = document.querySelector('.hub-nav-btn[data-hub-nav="games"]');
+            hideIf(!GAMES.length, navBtn);
+            box.addEventListener('click', function (e) {
+                var b = e.target.closest ? e.target.closest('[data-hub-game]') : null;
+                if (b) openGame(parseInt(b.getAttribute('data-hub-game'), 10));
+            });
+            var close = el('hub-game-close');
+            if (close) close.addEventListener('click', closeGame);
+        }
+        function openGame(i) {
+            var g = GAMES[i];
+            if (!g) return;
+            stopSpeaking();
+            var bin = atob(g.html64);
+            var bytes = new Uint8Array(bin.length);
+            for (var k = 0; k < bin.length; k++) bytes[k] = bin.charCodeAt(k);
+            if (gameUrl) URL.revokeObjectURL(gameUrl);
+            gameUrl = URL.createObjectURL(new Blob([bytes], { type: 'text/html;charset=utf-8' }));
+            el('hub-game-frame').src = gameUrl;
+            el('hub-game-overlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeGame() {
+            el('hub-game-overlay').style.display = 'none';
+            el('hub-game-frame').src = 'about:blank';
+            if (gameUrl) { URL.revokeObjectURL(gameUrl); gameUrl = null; }
+            document.body.style.overflow = '';
+        }
+
+        // ==========================================
         // Start
         // ==========================================
         function hubInit() {
@@ -9936,6 +10138,7 @@ video {
                 renderPronunciation();
                 renderWriting();
                 renderExercises();
+                renderGames();
 
                 loadSentences();
                 renderSentLessonChips();
